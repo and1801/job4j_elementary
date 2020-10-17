@@ -22,4 +22,5 @@ public class Converter {
         System.out.println("140 rubles are 2. Test result : " + passede);
         System.out.println("140 rubles are 2. Test result : " + passedd);
     }
+
 }
