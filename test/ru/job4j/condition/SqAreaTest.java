@@ -13,6 +13,7 @@ public class SqAreaTest {
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void whenp4k1ThenSquare1() {
         double expected = 1;

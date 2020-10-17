@@ -12,6 +12,7 @@ public class FitTest {
         double out = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void whenMan170Then80() {
         short in = 170;
@@ -19,6 +20,7 @@ public class FitTest {
         double out = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);        // Написать свой тест.
     }
+
     @Test
     public void whenWoman170Then69() {
         short in = 170;
