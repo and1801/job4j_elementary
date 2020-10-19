@@ -3,8 +3,11 @@ package ru.job4j.condition;
 public class Triangle {
 
     public static boolean exist(double ab, double ac, double bc) {
-        return ab + ac > bc && ac + bc > ab && ab + bc > ac;
-        return false;
-
+        boolean tri = ab + ac > bc && ac + bc > ab && ab + bc > ac;
+        if (tri) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
