@@ -6,7 +6,6 @@ public class Max {
         return result;
     }
 
-
     public static void main(String[] args) {
         int max = Max.max(33, 33);
         System.out.println(max);
