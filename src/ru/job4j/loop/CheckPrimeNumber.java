@@ -1,7 +1,8 @@
 package ru.job4j.loop;
 
 public class CheckPrimeNumber {
-    public boolean check(int number) {
+    @SuppressWarnings("checkstyle:EmptyBlock")
+    public static boolean check(int number) {
         boolean prime = number > 1;
         for (int index = 2; index < number; index++) {
 
@@ -9,7 +10,6 @@ public class CheckPrimeNumber {
                 prime = false;
                 break;
             } else if (number % index != 0) {
-                prime = true;
             }
         }
         return prime;
