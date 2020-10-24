@@ -2,9 +2,9 @@ package ru.job4j.loop;
 
 public class Slash {
     public static void draw(int size) {
-        for (double row = 1; row <= size; row++) {
-            for (double cell = 1; cell <= size; cell++) {
-                boolean left = row / cell == 1; /* добавить условие, по которому нужно определить ставить ли символ или нет. */
+        for (int row = 1; row <= size; row++) {
+            for (int cell = 1; cell <= size; cell++) {
+                boolean left = row == cell; /* добавить условие, по которому нужно определить ставить ли символ или нет. */
                 boolean right = cell + row == size + 1; /* добавить условие, что нужно ставить элемент в правый угол. */
                 if (left) {
                     System.out.print("0");
