@@ -7,8 +7,8 @@ public class Defragment {
                 int point = index;
                 for (point = index+1; point < array.length; point++) {
                     if (array[point] != null) {
-                        SwitchArray (String[] array, point, index)
-
+                        array[index] = array [point];
+                        array[point] = null;
                         break;
                     }
                 }
