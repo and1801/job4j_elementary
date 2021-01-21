@@ -13,7 +13,6 @@ public class Machine {
                 moneyChange -= coins[i];
                 rsl[size] = coins[i];
                 size++;
-                break;
 
             }
         }
