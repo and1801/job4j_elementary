@@ -1,10 +1,12 @@
 package ru.job4j.converter;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Converter {
 
     public static int rubleToEuro(int value) {
-        int rsl = value / 70;
-        return rsl;
+        AtomicInteger rsl = new AtomicInteger(value / 70);
+        return rsl.get();
     }
 
     public static int rubleToDollar(int value) {

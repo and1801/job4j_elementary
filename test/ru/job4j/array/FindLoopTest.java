@@ -8,7 +8,8 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHas5Then0() {
-        int input[] = {5, 4, 3, 2};
+        int[] input;
+        input = new int[]{5, 4, 3, 2};
         int value = 5;
         int result = FindLoop.indexOf(input, value);
         int expect = 0;
@@ -17,7 +18,8 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHas6ThenNot() {
-        int input[] = {5, 4, 3, 2};
+        int[] input;
+        input = new int[]{5, 4, 3, 2};
         int value = 6;
         int result = FindLoop.indexOf(input, value);
         int expect = -1;
