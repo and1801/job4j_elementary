@@ -5,9 +5,8 @@ public class Max {
         int result = left > right ? left : right;
         return result;
     }
-
-    public static void main(String[] args) {
-        int max = Max.max(33, 33);
-        System.out.println(max);
+    public static int max(int first, int second, int third) {
+        int tmp = max(second, third);
+        return max(first, tmp);
     }
 }
